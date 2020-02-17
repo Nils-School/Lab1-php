@@ -13,7 +13,7 @@
     <?php 
     date_default_timezone_set("Europe/Amsterdam"); 
     $date = date("h:i:s");
-    
+    $tijdvak= " ";
     if($date >= "06:00:00" && $date <= "12:00:00"){
         echo '    <style>body{ background-image: url("morning.png");} </style>';
         $tijdvak = "Morning";
@@ -22,7 +22,7 @@
         echo '    <style>body{ background-image: url("afternoon.png");} </style>';
         $tijdvak = "Afternoon";
     }
-    if($date >= "18:00:00" && $date <= "00:00:00"){
+    if($date >= "18:00:00" && $date <= "24:00:00"){
         echo '    <style>body{ background-image: url("evening.png");} </style>';
         $tijdvak = "Evening";
     }
